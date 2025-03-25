@@ -1,4 +1,7 @@
 listen_addr: ":10800"
-log_file: "socks5.log"
-username: "user"       # 用户名
-password: "pass"       # 密码
+log_path: "./logs/socks5.log"
+log_max_size: 100
+log_max_backups: 7
+log_compress: true
+connect_timeout: 10
+max_connections: 1024
